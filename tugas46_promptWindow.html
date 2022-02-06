@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ALERT CONFIRM WINDOW -->
+    <!-- <button onclick="alertWindow()">Download</button>
+    <p id="download"></p> -->
+    <p>Klik untuk merubah warna background</p>
+    <button onclick="promptWind()">Klik</button>
+    <p id="prompt"></p>
+
+    <script type="text/javascript">
+      // ALERT CONFIRM WINDOW
+      //   function alertWindow() {
+      //     var text;
+      //     var x = confirm("Apakah anda yakin ?");
+      //     if (x == true) {
+      //       text = "Yakin mendownload";
+      //     } else {
+      //       text = "Tidak yakin mendownload";
+      //     }
+      //     document.getElementById("download").innerHTML = text;
+      //   }
+      function promptWind() {
+        var warnabg = prompt("Masukkan Warna Backround yang kamu inginkan", "Yellow (english)");
+        if (warnabg != null) {
+          document.body.style.backgroundColor = warnabg;
+          document.getElementById("prompt").innerHTML =
+            "Yeay background berhasil dirubah menjadi warna " + warnabg + "!";
+        }
+      }
+    </script>
+  </body>
+</html>
